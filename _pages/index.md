@@ -9,22 +9,23 @@ permalink: /
 
 ## 프론트엔드 개발자 이주영(Brian)입니다.
 
-이력서, Portfolio, 공부의 흔적등을 보실 수 있습니다.
+이 페이지는 목차 페이지입니다.
+이력서, Portfolio, 공부의 흔적이라는 세가지의 콘텐츠가 준비돼있습니다.
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+<li style="padding: 1.5em 1em;">
+  Take a look at  <span style="font-weight: bold">[[about]]</span> to get to know my background!
+</li>
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+<li style="padding: 1.5em 1em;">
+  Take a look at  <span style="font-weight: bold">[[portfolio]]</span> to get to know my experiences.
+</li>
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
-
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
-
+<li style="padding: 1.5em 1em;">
+  Take a look at <span style="font-weight: bold">[[knowledge_MOCs]]</span> to get started on your exploration.
+</li>
 <style>
-  .wrapper {
-    max-width: 46em;
+  body {
+    min-height: 825px;
   }
+
 </style>
