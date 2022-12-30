@@ -1,3 +1,20 @@
-<div>
-    <a class="internal-link" href="{{ site.baseurl }}/"><b>{{ site.title }}</b></a>
+<div class="container">
+	<a class="internal-link" href="{{ site.baseurl }}/"><b>home</b></a>
+	<div class="nav">
+		<a class="internal-link" href="/about"><b>about</b></a>
+		<a class="internal-link" href="{{ site.baseurl }}/"
+			><b>myDigitalGarden</b></a
+		>
+	</div>
 </div>
+
+<style>
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav > a {
+		margin-left: 50px;
+	}
+</style>
