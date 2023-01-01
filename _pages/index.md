@@ -17,7 +17,7 @@ permalink: /
 </li>
 
 <li style="padding: 1.5em 1em;">
-  Take a look at  <span style="font-weight: bold">[[portfolio]]</span> to get to know my experiences.
+  Take a look at my <a href="https://www.notion.so/4f105fe60b914e078adc5adcc3c05e1f" style="font-weight: bold">CV</a> to get to know me first
 </li>
 
 <li style="padding: 1.5em 1em;">

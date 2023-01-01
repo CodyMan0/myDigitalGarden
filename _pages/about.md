@@ -4,9 +4,11 @@ title: About
 permalink: /about
 ---
 
-_This is an about page._
+# 안녕하세요 주니어 프론트엔드 개발자 이주영입니다!
 
-Feel free to tell the world about what you love! 😍
+전 ENTJ의 성향을 가지고 있으며 음악과 운동을 좋아합니다. 특히 농구와 수영 그리고 드럼을 좋아하고 잘합니다.
+
+전 스스로 성장하는 데 있어 **필요한 것**이 무엇인지 항상 고민하고 **달성**하는 개발자입니다. <br>또한 새로운 지식을 받아들이는 것을 즐기며 지식 사이 연관성을 확장하는 것을 좋아합니다.
 
 <style>
   body {
