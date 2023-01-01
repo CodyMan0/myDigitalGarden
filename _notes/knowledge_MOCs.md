@@ -7,13 +7,14 @@
 
  1. react           [[react MOC]]            
  2. deployment      [[Container Moc]]       
- 4. 운영체제              [[운영체제 Moc]]         
+ 4. 운영체제              [[OS Moc]]         
  5. 네트워크              [[네트워크 Moc]]         
  6. 상태관리              [[상태관리 Moc]]         
  7. 데이터베이스          [[DB Moc]]              
  8. CS 지식               [[CS Moc]]               
- 9. 자료 구조             [[자료 구조 Moc]]        
- 10. 클린코드                          [[CleanCode Moc]]                     
+ 9. 자료 구조             [[자료 구조 Moc]]      
+ 10. 알고리즘 문제풀이 [[Algorithm MOCs]]
+ 11. 클린코드                          [[CleanCode Moc]]                     
 
 
 
