@@ -3,11 +3,8 @@
 
 # Algorithm MOCs
 
-1. [[세수중 최솟 값 ]]
-2. [[최솟값 구하기]]
-3. [[대소문자 바꾸기]]
-4. [[가위바위보]]
-5. [[1.1]]
+[[coding_test]]
+[[Algorithm_problems]]
 
 
 

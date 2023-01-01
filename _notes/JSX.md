@@ -26,4 +26,3 @@ ReactDOM.render(React.createElement('div',{id:'msg'},'Hello World!'),mountNode))
 
 
 
-문번 : [[JSX 문법]]

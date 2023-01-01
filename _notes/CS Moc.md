@@ -2,4 +2,4 @@
 ---
 
 
-[[CS관련 스터디]]
+[[study minutes]]
