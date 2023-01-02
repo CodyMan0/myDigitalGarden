@@ -1,3 +1,6 @@
+---
+---
+
 
 typescript가 어떻게 컴파일할지 설정하는 파일이 tsconfig.json! 
 
