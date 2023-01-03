@@ -5,15 +5,48 @@
 		<a class="internal-link" href="/portfolio"><b>portfolio</b></a>
 		<a class="internal-link" href="/knowledge-mocs"><b>myDigitalGarden</b></a>
 	</div>
+	<div class="sns-bar">
+		<a
+			class="sns-link"
+			href="https://www.instagram.com/ju0_glorylord"
+			target="_blank"
+			><img
+				src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"
+				alt="instagram"
+		/></a>
+
+		<a class="sns-link" href="https://velog.io/@sharphand1" target="_blank">
+			<img
+				src="https://cdn-icons-png.flaticon.com/512/3959/3959420.png"
+				alt="blog"
+		/></a>
+
+		<a class="sns-link" href="mailto:hys83751952@gmail.com" target="_blank">
+			<img
+				src="https://cdn-icons-png.flaticon.com/512/542/542638.png"
+				alt="blog"
+		/></a>
+	</div>
 </div>
 
 <style>
 	.container {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
+		margin-top: 50px;
 	}
+
 	.nav > a {
 		margin-left: 30px;
+	}
+
+	.sns-bar {
+		position: absolute;
+		top: -60px;
+		right: 0;
+		display: flex;
+		gap: 36px;
 	}
 
 	@media (max-width: 450px) {
@@ -24,5 +57,15 @@
 		.nav > a {
 			display: none;
 		}
+
+		.sns-bar {
+			display: none;
+		}
+	}
+
+	img {
+		width: 36px;
+		height: 36px;
+		margin: 0;
 	}
 </style>

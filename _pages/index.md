@@ -26,4 +26,5 @@ permalink: /
   body {
     min-height: 825px;
   }
+  
 </style>
