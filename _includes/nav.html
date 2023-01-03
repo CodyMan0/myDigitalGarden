@@ -1,5 +1,5 @@
 <div class="container">
-	<a class="internal-link" href="{{ site.baseurl }}/"><b>home</b></a>
+	<a class="internal-link home" href="{{ site.baseurl }}/"><b>home</b></a>
 	<div class="nav">
 		<a class="internal-link" href="/about"><b>about</b></a>
 		<a class="internal-link" href="/portfolio"><b>portfolio</b></a>
@@ -12,8 +12,17 @@
 		display: flex;
 		justify-content: space-between;
 	}
-
 	.nav > a {
 		margin-left: 30px;
+	}
+
+	@media (max-width: 400px) {
+		.home {
+			display: none;
+		}
+
+		.nav > a {
+			display: none;
+		}
 	}
 </style>
