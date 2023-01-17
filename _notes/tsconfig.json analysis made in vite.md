@@ -38,3 +38,5 @@ typescript가 어떻게 컴파일할지 설정하는 파일이 tsconfig.json!
 	3. 
 
 ![[스크린샷 2022-12-06 오후 3.28.01.png|500]]
+4. [https://www.typescriptlang.org/tsconfig#strict](https://www.typescriptlang.org/tsconfig#strict)
+5. 

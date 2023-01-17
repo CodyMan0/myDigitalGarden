@@ -7,4 +7,8 @@
 3. [[Non_Linear]]
 
 
+# 스터디
+
+[[study minutes]]
+
 

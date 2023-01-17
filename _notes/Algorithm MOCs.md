@@ -3,11 +3,18 @@
 
 # Algorithm MOCs
 
-[[coding_test]]
-[[Algorithm_problems]]
+
+[[coding_test Strategy]]
+
+[[Algorithm_history]]
+
+[[ real coding test]]
+
+[[유형]]
 
 
+### 관련된 메모
 
-### 연결문서
-- 
+자료구조 : [[data_structure MOC]]
+
 

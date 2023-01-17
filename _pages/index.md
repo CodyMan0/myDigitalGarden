@@ -9,22 +9,19 @@ permalink: /
 
 ## 프론트엔드 개발자 이주영(Brian)입니다.
 
-자기소개 , 이력서, 포트폴리오 그리고 저만의 메모를 공유했습니다.
+<!-- <img src="https://avatars.githubusercontent.com/u/93697790?s=400&u=4e9dc7faba3cc479e3bd44569cd53ff74674ef62&v=4" alt='github' style="width: 400px; height: 400px; position: absolute; right: 130px; top: 0"/> -->
+
+열정이 있는 두 세 사람이 모인 곳에 기적이 일어날 수 있다고 생각합니다.
 
 <li style="padding: 1.5em 1em;">
-개발자 이주영에 대해 알길 원하시면 <span style="font-weight: bold">[[about]]</span>
+  저의 이력서는 이곳에 <a href="https://www.notion.so/4f105fe60b914e078adc5adcc3c05e1f" style="font-weight: bold">CV</a>
 </li>
 
 <li style="padding: 1.5em 1em;">
-  이력서를 확인하고 싶으시다면 <a href="https://www.notion.so/4f105fe60b914e078adc5adcc3c05e1f" style="font-weight: bold">CV</a>
-</li>
-
-<li style="padding: 1.5em 1em;">
-  저의 개발 분야 지식 노트를 보시고 싶다면 <span style="font-weight: bold">[[knowledge_MOCs]]</span>
+  My digital garden :  <span style="font-weight: bold">[[knowledge_MOCs]]</span>
 </li>
 <style>
   body {
     min-height: 825px;
   }
-  
 </style>

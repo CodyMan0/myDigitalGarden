@@ -21,6 +21,9 @@ OS는 다양한 interface를 제공해준다
 
 -> 내부적으로 어떻게 Limited Direction Execution protocol이 이루어진지 설명하시는데 좀 넘김.
 
+시스템 콜의 종류
+[[System call kinds]]
+
 
 
 

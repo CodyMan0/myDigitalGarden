@@ -10,12 +10,12 @@
  3. deployment      [[Container Moc]]       
  4. 운영체제              [[OS Moc]]         
  5. 네트워크              [[network Moc]]         
- 6. 상태관리              [[state management Moc]]         
- 7. 데이터베이스          [[DB Moc]]              
- 8. CS 지식               [[CS Moc]]               
- 9. 자료 구조             [[data_structure MOC]]      
- 10. 알고리즘  [[Algorithm MOCs]]
- 11. 클린코드                          [[CleanCode Moc]]                     
+ 6. 상태관리              [[state management Moc]]                       
+ 7. 자료 구조             [[data_structure MOC]]    
+ 8. 알고리즘  [[Algorithm MOCs]]
+ 9. 클린코드                          [[CleanCode Moc]]      
+ 10. 웹 API 아키텍처  [[web API Architecture]]
+ 11. modern Web [[Modern Web Moc]]
 
 
 # 노트 정리 세가지 규칙

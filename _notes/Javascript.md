@@ -3,7 +3,7 @@
 
 # JS (LN)
 1. 배열의 매소드 [[Array.prototype.method]]
-2. 스코프 : [[스코프]]
+2. 스코프 : [[scope]]
 3. social Login : [[login]]
 
 

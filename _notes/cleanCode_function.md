@@ -114,7 +114,7 @@ return 은 반환 값이 있다는 것.
 기본적으로 리액트의 setState는 window alert은 void!! 그래서 return을 사용할 필요가 없다.
 
 #좋은습관 : 내가 사용하는 API들이 리턴이 있는지 없는지 확인 (기본기!!!!)
-setState는 반환값이 없다.  [[반환값 유무 확인페이지]]
+setState는 반환값이 없다.  [[Return_Check_Moc]]
 
 함수를 사용할떄 반환값이 있는지 없는지 생각하면서 작성하기!!! 
 
@@ -304,8 +304,8 @@ obj.one // 1
 
 #좋은습관 순수함수를 만든다라는 의식적인 노력이 필요하다 
 
-[[Spread 문법]]
-[[깊은복사와 얕은 복사]]
+[[Spread syntax]]
+[[shallow and deep copy]]
 
 
 11. closure
