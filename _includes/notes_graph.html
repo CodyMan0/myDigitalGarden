@@ -68,6 +68,8 @@
 		    let nodesData = graphData.nodes;
 		    let linksData = graphData.edges;
 
+				console.log(linksData);
+
 		    const nodeSize = {};
 
 		    const updateNodeSize = () => {
@@ -93,7 +95,8 @@
 
 		    const onMouseover = function (d) {
 		      const relatedNodesSet = new Set();
-		      linksData
+					console.log('relatedNodeSet',relatedNodesSet)
+					linksData
 		        .filter((n) => n.target.id == d.id || n.source.id == d.id)
 		        .forEach((n) => {
 		          relatedNodesSet.add(n.target.id);
