@@ -1,5 +1,18 @@
 <div class="container">
-	<a class="internal-link home" href="{{ site.baseurl }}/"><b>home</b></a>
+	<div class="main">
+		<img
+			src="https://avatars.githubusercontent.com/u/93697790?s=400&u=4e9dc7faba3cc479e3bd44569cd53ff74674ef62&v=4"
+			alt="github"
+			style="
+				width: 80px;
+				height: 80px;
+				border-radius: 50px;
+				margin: 0;
+				margin-right: 20px;
+			"
+		/>
+		<a class="internal-link home" href="{{ site.baseurl }}/"><b>home</b></a>
+	</div>
 	<div class="nav">
 		<a class="internal-link" href="/about"><b>about</b></a>
 		<a class="internal-link" href="/portfolio"><b>portfolio</b></a>
@@ -11,18 +24,21 @@
 			href="https://www.instagram.com/ju0_glorylord"
 			target="_blank"
 			><img
+				style="width: 36px; height: 36px; margin: 0"
 				src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"
 				alt="instagram"
 		/></a>
 
 		<a class="sns-link" href="https://velog.io/@sharphand1" target="_blank">
 			<img
+				style="width: 36px; height: 36px; margin: 0"
 				src="https://cdn-icons-png.flaticon.com/512/3959/3959420.png"
 				alt="blog"
 		/></a>
 
 		<a class="sns-link" href="mailto:hys83751952@gmail.com" target="_blank">
 			<img
+				style="width: 36px; height: 36px; margin: 0"
 				src="https://cdn-icons-png.flaticon.com/512/542/542638.png"
 				alt="blog"
 		/></a>
@@ -34,7 +50,14 @@
 		position: relative;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin-top: 50px;
+	}
+
+	.main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.nav > a {
@@ -61,11 +84,5 @@
 		.sns-bar {
 			display: none;
 		}
-	}
-
-	img {
-		width: 36px;
-		height: 36px;
-		margin: 0;
 	}
 </style>
