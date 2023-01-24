@@ -4,7 +4,7 @@ title: PortFolio
 permalink: /portFolio
 ---
 
-담당한 프로젝트를 최신순으로 구성했습니다. 각 이미지를 누르면 해결했던 문제들을 담아놓은 gitHub README.md를 보실 수 있습니다.
+담당한 프로젝트를 최신순으로 구성했습니다. 각 이미지를 누르면 해결했던 문제들을 담아놓은 gitHub README.md를 보실 수 있습니다!
 
 <h2>23년<h2>
 <div class="box">

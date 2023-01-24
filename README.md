@@ -20,8 +20,7 @@
 
 ### portFolio
 
-![](/assets/port.png)
-현재 UI 및 콘텐츠 개발 진행중입니다.
+![](/assets/portFolio.png)
 
 ### digitalGarden
 
@@ -32,17 +31,21 @@
 - 연관성 그래프 시각화
   ![](/assets/relation.png)
 
-
 ## 당면했던 문제
-1. 
-- 정의
-- 해결
-2. 
-- 정의
-- 해결
-3.
+
+1.
+
 - 정의
 - 해결
 
+2.
+
+- 정의
+- 해결
+
+3.
+
+- 정의
+- 해결
 
 [오픈소스 README.md](https://github.com/maximevaillancourt/digital-garden-jekyll-template)
