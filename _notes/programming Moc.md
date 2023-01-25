@@ -1,9 +1,9 @@
 ---
 ---
 
-1. [[JS MOC]]
-2. [[Typescript]]
+1. [[JS_MOC]]
+2. [[Typescript_Moc]]
 3. [[python]]
 4. [[Ruby]]
-5. [[C]]
+5. [[C_Moc]]
 6. [[Java]]

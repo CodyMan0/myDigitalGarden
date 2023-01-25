@@ -4,19 +4,10 @@ tags :
 ---
 Up : [[HOME 🌎]]
 
-출처 :
-저자 :
-URL : 
-1.  https://www.youtube.com/watch?v=YuqB8D6eCKE (우아한 테코톡)
-2. https://www.youtube.com/watch?v=5ILR9Vd_Vos (얄코)
-3. https://www.youtube.com/watch?v=iZ9csAfU5Os&t=307s (드림코딩 엘리)
-
-인용 : 
-
 ---
 
 # 사전 지식
-[[SPA MPA]]
+[[SPA]]
 
 ## 페이지 구성 방식 : SPA , MPA 
 ## 렌더링 방식 : CSR , SSR 
@@ -26,10 +17,6 @@ URL :
 client side rendering (클라이언트 단에서 모든 것을 처리하는 것)
 ![[스크린샷 2022-11-01 오후 12.38.11.png|500]]
 빈뼈대 HTML을 주니 
-
-Q. let's find the pros and cons
-
----
 
 - 서버 부하가 낮다 (단)
 - 그렇다면 사용자 경험이 증가된다(장)
@@ -42,28 +29,20 @@ Q. let's find the pros and cons
 
 -> 과거 1990년 중반의 사용했던 방식인 Static Site로부터 영감을 받아 생긴 것 -> ==SSR== 
 
----
 
 ## SSR
 server side rendering (서버에서 미리 데이터를 받고 HTML로 변환한 후 받는 것 )
 ![[스크린샷 2022-11-01 오후 12.41.49.png|500]]
 서버에서 렌더링 준비를 마친 HTML을 주니
 
-Q. let's find the pros and cons
-
----
-
 - SEO에 유리 (장)
 - 초기 로딩 속도가 빠르다 (장)
 - ==보이지만 사용자와 INTERACTION이 불가하다는 치명적 단점(단점) -> 사용자가 느끼기에 불쾌함==
 - ==서버 과부화 (단)==
----
 
 ## CSR vs SSR 장단점
 ![[스크린샷 2022-11-01 오후 1.31.19.png]]
 
-
----
 
 ## CSR의 단점을 보완
 - 초기 로딩 속도를 보완하기 위해 
@@ -72,9 +51,9 @@ Q. let's find the pros and cons
 	3. chunk 분리
 - SEO 불리를 보완하기 위해
 	1. pre-rendering
----
 
 - CSR 앱에 SSR 과 SSG를 도입하는 것도 방법 
+
 1. next.js (리액트에서 ssr, ssg를 사용할 수 있게 하는 프레임 워크 )
 2. Gatsby (다양한 플러그인 )
 
@@ -82,7 +61,7 @@ Q. let's find the pros and cons
 ### 생각 포인트 
 -> 유저가 웹사이트에 방문한 후 페이지가 보여지기까지 오래 걸리는 상황에서 어떻게 JS 파일을 묶어서 먼저 빠르게 보여줄 것들이
 무엇인지 생각해볼 필요가 있는 것 같다. 
--> 노드 (2009) -> 리액트(2013) -> 게츠비()
+-> 노드 (2009) -> 리액트(2013) -> 게츠비
 
 ---
 
@@ -102,22 +81,6 @@ Isomorphic(동일한 구조의) App Universal Application
 내용 업데이트 없다면 -> ==SSG==
 
 모든 부분을 다 잡아야한다면 -> ==Universal== 
-
----
-
-# 여기서 생긴 궁금증 
-1. SPA 이면 Client Side Rendering인건가? 
-2. MPA는 어떤 렌더링 방식을 취하는지 또는 두가지 방식을 취하는고 있는건지 정확히 모르는 것 같은데? 
-3. SPA 라이브러리로 SSR,CSR 두가지 방식을 구현한다는게 어떤 의미인지? 
-
----
-
-# 회고 
-1. 깊은 얘기를 할 수 있어서 좋았다.
-2. 모르는 부분이 더 깊게 생겨서 알 수 있었다. 
-3. 개념들을 생각해볼 수 있는 시간이어서 좋았다. 
-4. 해당 주제에 다양한 자료를 공유할 수 있어서 좋았다. 
-5. 어려운 키워드를 미리 설명해주면 좋겠다. 
 
 
 ### 생각의 연결고리

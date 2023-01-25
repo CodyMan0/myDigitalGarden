@@ -8,24 +8,23 @@ Q.어레이는 어떤 자료구조 인가요?
 Q. Dynamic Array는 어떤 자료구조 인가요?
 -> [[Vector]]
 
-Q. [[Linked List]]에 대해서 설명해 주세요.
+Q. [[Linked_List]]에 대해서 설명해 주세요.
 
-Q. [[Array]] VS[[Linked List]]를 비교해서 설명해주세요. [[Array vs Linked List]] #정리요망
+Q. [[Array]] VS[[Linked_List]]를 비교해서 설명해주세요. [[Array vs Linked List]] #정리요망
 
-Q. [[스레드란|스레드]]에 대해 설명해주세요.
+Q. [[Thread]]에 대해 설명해주세요.
 Q-1. [[process]]
-Q-2. [[공유자원]]
-Q-3 [[임계 영역]]
+Q-2. [[Shared resources]]
+Q-3 [[critical section]]
 
-Q. [[멀티스레드]]에 대해 설명해주세요.
+Q. [[Multi_Thread]]에 대해 설명해주세요.
 
 Q. multi process와 multi thread를 비교 설명해 주세요.
-[[처리방식의 일종인 멀티 프로세스와 멀티 스레드]]
+[[Multi-processes and multi-threads, a type of processing]]
 
 
 추천 영상 
-1. cs50 부스트 코스   -> 빅 O 표기법 [[Time Complexity]]
+1. cs50 부스트 코스   -> 빅 O 표기법 [[Time_Complexity]]
 
-# -> 말을 하자(무조건!)
 
 

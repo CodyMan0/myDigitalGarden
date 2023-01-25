@@ -17,4 +17,4 @@ URL :
 
 키워드 :
 
-관련있는 메모 :[[JS MOC]] , [[iterable Object]],
+관련있는 메모 :[[JS_MOC]] , [[iterable Object]],

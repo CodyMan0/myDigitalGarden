@@ -9,7 +9,7 @@ Up : [[HOME 🌎]]
 URL : https://www.youtube.com/watch?v=QtOF0uMBy7k
 인용 :
 
-[[실행 컨텍스트]]는 call stack에 쌓인다.  
+[[Execution Context]]는 call stack에 쌓인다.  
 
 
 

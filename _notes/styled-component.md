@@ -33,12 +33,9 @@ favoriteColors`제가 좋아하는 색은 ${red}과 ${blue}입니다.`
 styled-componenet는 런타임에 스타일이 씌어진다
 
 
-[[styled-component 등장 배경]]
-
-
 
 ### 생각의 연결고리
-분야 : [[runtime|런타임작동원리]]
+분야 : [[runtime]]
 
 키워드 :
 

@@ -4,6 +4,7 @@
 # hook MOCs
 
 만들어진 계기 : [[How the hook was made]]
+역할 : ?? 라이프 사이클을 관리?? 생명주기를 관리해준다? -> 
 
 
 1. [[useRef]]

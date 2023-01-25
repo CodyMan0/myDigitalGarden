@@ -22,4 +22,4 @@ DOM 요소에 변화가 생기면 웹 브라우저는 다시 렌더 트리(DOM �
 
 ### 관련있는 메모
 
-[[브라우저 동작원리]]
+[[working process of browser]]

@@ -9,7 +9,7 @@
 
 
 # Table of Content
-[[클로저 정의]]  < - 어떤 말이나 사물의 뜻을 분명하게 정하여 밝히는 것
+[[definition of Closure]]  < - 어떤 말이나 사물의 뜻을 분명하게 정하여 밝히는 것
 [[클로저의 의의]] < - 말이나 글의 속뜻.
 [[클로저 사용하는 이유]] 
 [[클로저의 활용 및 예시]]
@@ -28,7 +28,7 @@
 
 
 # 관련있는 개념 정리 
-[[call]] , [[실행 컨텍스트]],  [[scope]], [[scope chaining]] , [[Heap memory]],  [[순수 함수]] ,[[sideEffect#클로저도 사이드 이펙트다]]
+[[call]] , [[Execution Context]],  [[scope]], [[scope chaining]] , [[Heap memory]],  [[순수 함수]] ,[[sideEffect#클로저도 사이드 이펙트다]]
 
 
 ### 생각의 연결고리

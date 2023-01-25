@@ -3,7 +3,7 @@
 
 # **👉 This**
 
-[[this를 왜 알아야하지?]]
+[[why would i know "this" in JS]]
 
 ## **🙋‍♂️ This란**
 

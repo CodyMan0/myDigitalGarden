@@ -13,72 +13,11 @@
 **1/6 (금)**
 ### 편집기 활용해서 타입시스템 확인하기
 
-[[타입 넓히기]]
-[[타입 좁히기]]
-
 - fetch의 정의 
 ```ts
 declare function fetch(input: RequestInfo | URL, init?: RequestInit): Promise<Response>;
 ```
 
-- reqestInit 
-```ts
-interface RequestInit {
-
-/** A BodyInit object or null to set request's body. */
-
-body?: BodyInit | null;
-
-/** A string indicating how the request will interact with the browser's cache to set request's cache. */
-
-cache?: RequestCache;
-
-/** A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials. */
-
-credentials?: RequestCredentials;
-
-/** A Headers object, an object literal, or an array of two-item arrays to set request's headers. */
-
-headers?: HeadersInit;
-
-/** A cryptographic hash of the resource to be fetched by request. Sets request's integrity. */
-
-integrity?: string;
-
-/** A boolean to set request's keepalive. */
-
-keepalive?: boolean;
-
-/** A string to set request's method. */
-
-method?: string;
-
-/** A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode. */
-
-mode?: RequestMode;
-
-/** A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect. */
-
-redirect?: RequestRedirect;
-
-/** A string whose value is a same-origin URL, "about:client", or the empty string, to set request's referrer. */
-
-referrer?: string;
-
-/** A referrer policy to set request's referrerPolicy. */
-
-referrerPolicy?: ReferrerPolicy;
-
-/** An AbortSignal to set request's signal. */
-
-signal?: AbortSignal | null;
-
-/** Can only be null. Used to disassociate request from any Window. */
-
-window?: null;
-
-}
-```
 참고 [[Promise (js)]]
 
 -> 타입을 편집기에서 정의로 이동하기를 통해 찾아보는 것을 추천
@@ -139,7 +78,7 @@ const list = [1,2];
 const tuple: [number, number] = list
 ```
 
-### 관련있는 메모 : [[useState]]
+관련있는 메모 : [[useState]]
 
 ```ts
 function useState<S>(initialState: S | (() => S)): [S, Dispatch<SetStateAction<S>>];
@@ -485,7 +424,7 @@ const checkedFetch: typeof fetch = async(input, init) => {
 
 **1/17 (화)**
 ### 타입 연산과 제너릭 사용으로 반복 줄이기
-DRY 원칙에 대해 설명 -> 타입에 대해서 간과가능성 -> 
+DRY 원칙에 대해 설명 -> 타입에 대해서 간과가능성 -
 
 ```ts
 interface Person {
@@ -507,7 +446,7 @@ birth: Date;
 #### 반복을 줄이는 방법
 1. 간단한 방법 타입에 이름을 붙이는 것. 
 -> 우리가 익히 사용하는 방법인데 상수를 사용해서 반복을 줄이는 방식으로 타입 시스템에도 적용한 것.
-1-1. interface에서 공통적인 부분은 extends를 사용하거나 &을 통해서 확장 가능
+1-1. interface에서 공통적인 부분은 **extends**를 사용하거나 **&**을 통해서 확장 가능
 ```ts
 interface Person {
 firstName: string;
@@ -521,7 +460,8 @@ birth: Date;
 type PersonWithBirthDate Person & {birth : Date}
 ```
 
-#Q. 이런 기법이 유니온 타입에 속성을 추가하려고 할떄 유용하다고 하는데 왜지? 
+#Q. 이런 기법이 유니온 타입에 속성을 추가하려고 할떄 유용하다고 하는데 왜지?
+-> 타입 확장을 유연하게 하려고 
 
 
 ```ts
@@ -541,6 +481,7 @@ interface TopNavState {
 
 #Q 이것도 extends를 활용해서 타입을 정의하면 되지 않나? 왜 다른 방식으로 하지?
 -> state의 부분 집합으로 TopNavState를 정의 -> State를 인덱싱하여 속성의타입에서 중복을 제거할 수 있다.
+-> 논리적으로 생각하여 다시 정리 
 
 ```ts
 type TopNavState = {
@@ -629,12 +570,14 @@ type Options = typeof INIT_OPTIONS
 
 값으로 부터 만들어져서 선언 순서가 중요 타입 정의 -> 값이 그 타입에 할당 가능하다고 선언하는 것이 베스트
 
-- 함수나 메서드 반환값에 **명명된 타입** 을 만들 수 있다.
+- 함수나 메서드 반환값에 커스텀하여 정의... ->  을 만들 수 있다.
+-> 명명된 타입 : Options (타입 별칭)
 -> 조건부 타입이 필요하다.  -> ReturnType 제네릭
 ```ts
 type UserInfo = ReturnType<typeof getUserInfo>;
 ```
-typeof의 대상이 값인지 타입인지 알고 처리해야한다. 여기서는 타입! 
+
+- typeof의 대상이 값인지 타입인지 알고 처리해야한다. 여기서는 타입! 
 
 
 ==흩어져있는 지식 모음 (나중에 한데 모아 정리)==
@@ -689,8 +632,15 @@ thrust : 'sdfds'
 
 위에서 본 인덱스 시그니처는 부정확해서 인터페이스 사용해야한다. 그럼 인덱스 시그니처는 언제 사용해야하는거지?
 -> **동적 데이터**를 표현할때 -> 동적 데이터가 뭔데? (계산되고 가공되는 데이터) -> 언제 사용되는데?(서버에서 실시간으로 변환되어 적용이 될떄 사용됨 ) 
+-> 서버 데이터는 스키마를 알기에 동적 데이터가 아니다. 왜냐하면 스키마가 있으니깐 (영준)
+-> 추가적으로 타입을 확장시키고 싶을떄 사용했던 것 같다 (태희)
+
 -> 객체의 키값을 미리 알 수 없을때 사용하는 방식이라는 것 같다. 
 
+인덱스 시그니처를 사용하지 않아야할떄 -> 타입이 정의되지 않고 제한되어있을때 
+사용할떄 -> 타입의 범위가 포괄적일때? 
+-> 인덱스 시그니처 사용시 에러가 많이 나옴.
+-> ==안쓰는게 답이다.==
 
 - 요약
 1. 런타임까지 객체 속성을 알 수 없을떄 인덱스 시그니처 사용
@@ -717,4 +667,10 @@ console.log(Object.keys(x)) /// [ '0', '1', '2' ]
 92Page 너무 어렵다.
 
 ### 변경 관련된 오류 방지를 위해 readonly 사용하기 
+
+
+-> 잠시 내려놓음. 모르겠음
+
+매개변수에 readOnly 해놓으면 값을 못바꾼다
+
 

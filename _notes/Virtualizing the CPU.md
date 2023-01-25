@@ -12,7 +12,7 @@ Q. 컴퓨터를 사용할떄 수많은 프레세스에게 마치 CPU가 하나�
 
 필요한 것 
 - 도구 (메커니즘): [[Context Switching]] 
-- 지능 (정책): [[scheduling 정책]]
+- 지능 (정책): [[scheduling Policy]]
 - 
 
 ![[스크린샷 2022-12-16 오후 4.10.03.png|400]]
@@ -21,7 +21,7 @@ CPU 가상화를 위해서는 실제로 OS가 [[interleaving]]을 컨드롤 한�
 프로세스 A , 프로세스 B 가 있는데 프로스세 A가 진행되다가 OS 코드에서 interleaving하여 프로세스 B가 진행되는 것. 
 
 
-[[CPU를 가상화할때 발생하는 문제점]]
+[[Problems with virtualizing CPUs]]
 
 
 ### 관련있는 메모 

@@ -304,7 +304,7 @@ obj.one // 1
 
 #좋은습관 순수함수를 만든다라는 의식적인 노력이 필요하다 
 
-[[Spread syntax]]
+[[Spread operator syntax]]
 [[shallow and deep copy]]
 
 

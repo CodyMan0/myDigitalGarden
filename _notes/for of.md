@@ -10,3 +10,10 @@ console.log(i)
 ```
 
 여기서 잠깐 배열은 당연히 되지만 string도 가능 
+
+. **for..of iterates over the values of an iterable object**. 
+Examples of iterable objects are **arrays, strings, and NodeLists.**
+
+
+### 관련있는 메모
+[[for in]]
