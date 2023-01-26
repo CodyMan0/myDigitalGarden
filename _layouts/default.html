@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/satellite-min.css"
+		integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA="
+		crossorigin="anonymous"
+	/>
+
 	{% include head.html %}
 	<body>
 		<nav>{% include nav.html %}</nav>
@@ -7,5 +14,44 @@
 			<main>{{ content }}</main>
 		</div>
 		{% include link-previews.html wrapperQuerySelector="content" %}
+		<script
+			src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
+			integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.49.4/dist/instantsearch.production.min.js"
+			integrity="sha256-Ps194FVLiZAj7tXnC/xW7piaYV5EaKB8NWYu1xAN3Rc="
+			crossorigin="anonymous"
+		></script>
+		<script>
+			const searchClient = algoliasearch(
+				"VZVRIKH0WD",
+				"7632330f98e4bfa8d2731641cc0ff3a2"
+			);
+			const search = instantsearch({
+				indexName: "digitalGarden",
+				searchClient,
+			});
+
+			search.addWidgets([
+				instantsearch.widgets.searchBox({
+					container: "#searchbox",
+					placeholder: "Search what you wanna know",
+					autofocus: false,
+					poweredBy: true,
+				}),
+
+				instantsearch.widgets.hits({
+					container: "#hits",
+					templates: {
+						empty: "No results",
+						item: (data) => `<h3 class="text-green">${data.title}</h3>`,
+					},
+				}),
+			]);
+
+			search.start();
+		</script>
 	</body>
 </html>
