@@ -49,6 +49,7 @@ relative_permalinks: false
 plugins:
   - jekyll-last-modified-at
   - jekyll-seo-tag
+  - jekyll-algolia
 
 sass:
   sass_dir:          _sass
@@ -87,3 +88,16 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+
+
+algolia:
+  application_id: "VZVRIKH0WD"
+  index_name: "digitalGarden"
+  indexing_batch_size: 500
+  extensions_to_index:
+    - html
+    - md
+
+
+
+  ##ALGOLIA_API_KEY='7632330f98e4bfa8d2731641cc0ff3a2' bundle exec jekyll algolia

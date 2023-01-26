@@ -9,3 +9,7 @@ gem "jekyll-last-modified-at", git: "https://github.com/maximevaillancourt/jekyl
 gem "jekyll-seo-tag"
 gem "webrick", "~> 1.7"
 gem "nokogiri"
+
+group :jekyll_plugins do
+  gem "jekyll-algolia"
+end
