@@ -1,0 +1,90 @@
+<script
+	src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
+	integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.49.4/dist/instantsearch.production.min.js"
+	integrity="sha256-Ps194FVLiZAj7tXnC/xW7piaYV5EaKB8NWYu1xAN3Rc="
+	crossorigin="anonymous"
+></script>
+<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/satellite-min.css"
+	integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA="
+	crossorigin="anonymous"
+/>
+<base href="{{ site.baseurl }}" />
+
+<script>
+	let searchClient = algoliasearch(
+		"VZVRIKH0WD",
+		"7632330f98e4bfa8d2731641cc0ff3a2"
+	);
+
+	let additionalClass = "";
+
+	const hitTemplate = function (hit) {
+		let url = `{{ site.baseurl }}${hit.url}`;
+		const title = hit._highlightResult.title.value;
+
+		return `<h3><a href="${url}">${title}</a></h3>`;
+	};
+	const search = instantsearch({
+		indexName: "digitalGarden",
+		searchClient,
+		searchFunction(helper) {
+			const container = document.querySelector("#hits");
+			container.style.display = helper.state.query === "" ? "none" : "";
+			helper.search();
+		},
+	});
+
+	const searchBox = instantsearch.widgets.searchBox({
+		container: "#searchbox",
+		placeholder: "궁금하신 개념을 검색해보세요.",
+		poweredBy: true,
+	});
+	const hits = instantsearch.widgets.hits({
+		container: "#hits",
+		templates: {
+			empty: "검색 결과가 없습니다.",
+			item: hitTemplate,
+		},
+		// transformItems(items, { results }) {
+		// 	console.log(items);
+		// 	console.log("result", results);
+		// 	return items.filter((item) => console.log(item));
+		// },
+	});
+
+	const poweredBy = instantsearch.widgets.poweredBy({
+		container: "#power",
+	});
+
+	search.addWidgets([searchBox, hits, poweredBy]);
+
+	search.start();
+</script>
+
+<style>
+	.hit-box {
+		height: 300px;
+		overflow-y: scroll;
+	}
+
+	.search-sub-container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+	}
+
+	#power {
+		font-size: 0.6rem;
+		display: flex;
+		justify-content: right;
+	}
+</style>
