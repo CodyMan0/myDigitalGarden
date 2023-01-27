@@ -25,13 +25,30 @@
 			crossorigin="anonymous"
 		></script>
 		<script>
-			const searchClient = algoliasearch(
+			let searchClient = algoliasearch(
 				"VZVRIKH0WD",
 				"7632330f98e4bfa8d2731641cc0ff3a2"
 			);
+
+			let additionalClass = "";
+
+			const hitTemplate = function (hit) {
+				return;
+				`<div class="post-item ${additionalClass}">
+						<a href=${hit.url}>${hit.title}</a>
+			    </div>`;
+			};
 			const search = instantsearch({
 				indexName: "digitalGarden",
 				searchClient,
+				searchFunction: function (helper) {
+					if (helper.query === "") {
+						additionalClass = "post-item__empty-query";
+					} else {
+						additionalClass = "";
+					}
+					helper.search();
+				},
 			});
 
 			search.addWidgets([
@@ -44,9 +61,9 @@
 
 				instantsearch.widgets.hits({
 					container: "#hits",
+					hitsPerPage: 10,
 					templates: {
-						empty: "No results",
-						item: (data) => `<h3 class="text-green">${data.title}</h3>`,
+						item: hitTemplate,
 					},
 				}),
 			]);
