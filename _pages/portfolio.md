@@ -13,7 +13,6 @@ permalink: /portFolio
 <img class="image-container" src="/assets/royalGuard.png"/>
 <div class="sub-title">
 <span class="real-title">로얄 가드 프로젝트</span>
-<span class="process sub-real-title">진행중</span>
 </div>
 <div class="sub-title">
 <span class="sub-real-title">1.08 ~ 현재 진행중</span>
@@ -25,7 +24,6 @@ permalink: /portFolio
 <img class="image-container" src="/assets/graph.png"/>
 <div class="sub-title">
 <span class="real-title">만민의 디지털 저장소 프로젝트</span>
-<span class="process sub-real-title">진행중</span>
 </div>
 <div class="sub-title">
 <span class="sub-real-title">01.01 ~ 현재 진행중</span>
@@ -41,7 +39,6 @@ permalink: /portFolio
 <img class="image-container" src="https://velog.velcdn.com/images/sharphand1/post/feb4b818-6b68-44e3-a546-2a6c4af23e98/image.png">
 <div class="sub-title">
 <span class="real-title">몽땅 보내 프로젝트</span>
-<span class="failure sub-real-title">실패</span>
 </div>
 <div class="sub-title">
 <span class="sub-real-title">2022.12.21 ~ 2022.12.29</span>
@@ -53,7 +50,6 @@ permalink: /portFolio
 <img class="image-container" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbpNzzi%2FbtrOQCK3v7K%2F5jBs0mjFY45j0r4VRCXXK1%2Fimg.png">
 <div class="sub-title">
 <span class="real-title">KODA 내부 설문조사 프로젝트</span>
-<span class="success sub-real-title">성공</span>
 </div>
 <div class="sub-title">
 <span class="sub-real-title">22.09.19 ~ 22.10.13</span>
@@ -65,7 +61,6 @@ permalink: /portFolio
 <img class="image-container" src="https://velog.velcdn.com/images/sharphand1/post/9bfab73f-d9d6-4d9d-b075-7b8ca8ef996c/image.png">
 <div class="sub-title">
 <span class="real-title">1Million 예약 사이트 클론 프로젝트</span>
-<span class="success sub-real-title">성공</span>
 </div>
 <div class="sub-title">
 <span class="sub-real-title">22.08.29 ~ 22.09.08</span>
@@ -128,15 +123,6 @@ font-weight: 400;
   cursor: inherit;
 }
 
-.success {
-  color : blue;
-}
 
-.failure {
-  color : red;
-}
-
-.process {
-  color : green;
 }
 </style>
