@@ -112,6 +112,12 @@ a {
 			content: "";
 		}
 	}
+	&.ais-PoweredBy-link {
+		border-bottom: 0;
+		&:after {
+			content: "";
+		}
+	}
 	&.internal-link:after,
 	&.footnote:after,
 	&.reversefootnote:after {

@@ -1,22 +1,33 @@
 <style>
 	.hit-box {
-		height: 300px;
+		min-height: 100px;
+		max-height: 440px;
 		overflow-y: scroll;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+		border-radius: 3px;
+		border: 1px solid #d6d6e7;
 	}
 
 	.search-sub-container {
-		position: absolute;
-		top: 0;
-		right: 0;
-		display: flex;
-		flex-direction: column;
 		width: 300px;
+	}
+	.ais-SearchBox-input {
+		width: 100%;
 	}
 
 	#power {
 		font-size: 0.6rem;
 		display: flex;
 		justify-content: right;
+	}
+
+	.feedback {
+		align-items: center;
+		background: #fff;
+		display: flex;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		padding: 0.8rem;
 	}
 </style>
 <script
@@ -43,11 +54,14 @@
 		"7632330f98e4bfa8d2731641cc0ff3a2"
 	);
 
+	const emptyTemplate = function (hit) {
+		return `<h3 class="feedback">찾으시는 정보가 없습니다.</h3>`;
+	};
 	const hitTemplate = function (hit) {
 		let url = `{{ site.baseurl }}${hit.url}`;
 		const title = hit._highlightResult.title.value;
 
-		return `<h3><a href="${url}">${title}</a></h3>`;
+		return `<h3><a href="${url}" class="sns-link">${title}</a></h3>`;
 	};
 	const search = instantsearch({
 		indexName: "digitalGarden",
@@ -62,18 +76,20 @@
 	const searchBox = instantsearch.widgets.searchBox({
 		container: "#searchbox",
 		placeholder: "궁금하신 개념을 검색해보세요.",
-		poweredBy: true,
 	});
 	const hits = instantsearch.widgets.hits({
 		container: "#hits",
 		templates: {
-			empty: "검색 결과가 없습니다.",
+			empty: emptyTemplate,
 			item: hitTemplate,
 		},
 	});
 
 	const poweredBy = instantsearch.widgets.poweredBy({
 		container: "#power",
+		cssClass: {
+			link: ["ais-PoweredBy-link"],
+		},
 	});
 
 	search.addWidgets([searchBox, hits, poweredBy]);
