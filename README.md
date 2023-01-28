@@ -38,14 +38,14 @@
 
 - **해결 과정** :
 
-1. Algolia와 연동하는 과정에서 Index의 record가 10KB 초과 에러
+1. **Algolia와 연동하는 과정에서 Index의 record가 10KB 초과 에러**
    ![](https://velog.velcdn.com/images/sharphand1/post/52971534-1c18-4f8f-b7e7-4b2706fa79c8/image.png)
    [Algolia 연동했던 방법을 블로그를 활용하여 공유하였습니다.](https://velog.io/@sharphand1/Jekyll%EB%A7%8C%EB%AF%BC%EC%9D%98-%EB%94%94%EC%A7%80%ED%84%B8-%EC%B0%BD%EA%B3%A0-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
 저의 웹페이지는 노트 간, 상호연결성을 보여줍니다. 그렇다보니 각 html의 데이터로 인해 10KB가 넘어가는 문제가 있었습니다. 이 문제를 해결하기 위해 현재 사용하고 있는 오픈소스의 코드를 분석해보니 그래프를 백링크를 만들어주는 plugIn의 File.write() 시스템 콜에 해당하는 코드를 삭제해주어 인덱스를 추가하는 과정에서는 그래프 데이터가 추가되지 않게 하였습니다.
 <br>
 
-2. 스크립트 안에 있는 "#searchBox"가 읽히지 않는 문제
+2. **스크립트 안에 있는 "#searchBox"가 읽히지 않는 문제**
 
 ```
   error : Container must be `string` or `HTMLElement`. Unable to find #searchbox
@@ -55,7 +55,7 @@ script를 id가 searchbox인 element 뒤에 실행시키면서 어렵지 않게 
 
   <br>
   
-  3. 검색창에 쿼리를 날리지 않아도 결과를 보여주는 문제
+  3. **검색창에 쿼리를 날리지 않아도 결과를 보여주는 문제**
 
 ```js
 const search = instantsearch({
@@ -86,19 +86,25 @@ const search = instantsearch({
 ![](https://velog.velcdn.com/images/sharphand1/post/150a79c5-257a-4265-8047-6e01253213a5/image.gif)
 <br>
 
-4. 검색 기능 추가 이후, graph가 보이지 않는 문제
-   **검색 추가 전**
-   ![](https://velog.velcdn.com/images/sharphand1/post/140cace9-e5dd-47a8-9a68-ae7affe7a32b/image.png)
-   <br>
-   **검색 추가 후**
-   ![](https://velog.velcdn.com/images/sharphand1/post/18e47156-3f5e-4bf6-aba1-72534c571d9e/image.png)
-   <br>
+4. **검색 기능 추가 이후, graph가 보이지 않는 문제**
+ **검색 추가 전**
+ ![](https://velog.velcdn.com/images/sharphand1/post/140cace9-e5dd-47a8-9a68-ae7affe7a32b/image.png)
+ <br>
+ 
+ **검색 추가 후**
+ ![](https://velog.velcdn.com/images/sharphand1/post/18e47156-3f5e-4bf6-aba1-72534c571d9e/image.png)
+ <br>
 
 **해결 과정**
+
 `4-1`. script가 읽히는 순서 재점검하였습니다. (다양한 시도끝에 스크립트 문제는 아니라고 생각했습니다.)
+
 `4-2`. 검색 기능이 있는 script를 주석 처리하니 그래프가 보입니다. 그렇다면 검색 script와 graph script와 문제가 있는 것 같았습니다.
+
 `4-3`. {% include algolia.html %} 지킬의 liquid 문법을 공부하여 기본적으로 잘못 사용한것이 있는지 확인한 결과, 정상적으로 사용한 것을 확인했습니다.
+
 `4-4`. 그래프 script 와 algolia script 모두 cdn을 통해 받는 정적 콘텐츠인데 무슨 문제가 있는지 확인한 결과, CDN을 통해서 저의 위치로부터 가까운 곳에서 정적인 콘텐츠가 전송되어 속도가 빠르다는 것을 알게 됐습니다.
+
 `4-5`. 결국 오픈소스의 graph_note.html에서 console API를 활용하여 디버깅한 결과
 
 ```js
