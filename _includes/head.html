@@ -45,22 +45,7 @@
 	{% if page.image %}
 	<!-- <meta property="og:image" content="{{ site.url }}{{ page.image }}"> -->
 	{% endif %}
-	<script
-		src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
-		integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.49.4/dist/instantsearch.production.min.js"
-		integrity="sha256-Ps194FVLiZAj7tXnC/xW7piaYV5EaKB8NWYu1xAN3Rc="
-		crossorigin="anonymous"
-	></script>
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/satellite-min.css"
-		integrity="sha256-p/rGN4RGy6EDumyxF9t7LKxWGg6/MZfGhJM/asKkqvA="
-		crossorigin="anonymous"
-	/>
+
 	<title>
 		{% if page.id == "home" %} {{ site.title }} {% else %} {{ page.title }}
 		&mdash; {{ site.title }} {% endif %}
