@@ -22,7 +22,6 @@ html {
 }
 
 body {
-	position: relative;
 	box-sizing: content-box;
 	font-family: $font-family;
 	margin: 0 auto;
@@ -164,8 +163,4 @@ code {
 .invalid-link-brackets {
 	color: #ccc;
 	cursor: help;
-}
-
-.post-item__empty-query .post-snippet {
-	display: none;
 }
