@@ -72,6 +72,10 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         HTML
       )
     end
+    File.write('_includes/notes_graph.json', JSON.dump({
+      edges: graph_edges,
+      nodes: graph_nodes,
+    }))
     end
 
   
