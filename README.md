@@ -110,25 +110,25 @@ const search = instantsearch({
 
 `4-4`. 그래프 script 와 algolia script 모두 cdn을 통해 받는 정적 콘텐츠인데 무슨 문제가 있는지 확인한 결과, CDN을 통해서 저의 위치로부터 가까운 곳에서 정적인 콘텐츠가 전송되어 속도가 빠르다는 것을 알게 됐습니다.
 
-`4-5`. 결국 오픈소스의 graph_note.html에서 console API를 활용하여 디버깅한 결과
+`4-5`. 결국 오픈소스의 graph_note.html에서 console API를 활용하여 디버깅 결과
 
 ```js
 const svg = d3.select("svg");
 console.log(svg); // 그래프의 svg가 아닌 algolia의 searchbox안에 있는 돋보기 svg로 할당이 된 것을 확인했습니다.
 ```
 
-graph script가 실행되고 있는 상황에서 최상위 svg는 검색 돋보기가 존재한다는 것을 발견했습니다. 그래서 돋보기 svg 뒤에 링크들이 생기는 문제가 발생했습니다. D3 라이브러리를 찾아보니 id를 통해서도 연결을 할 수 있다는 것을 알게 됐습니다.
+graph script안에서 선언된 전역변수를 algolia 검색 script안에서도 사용하고 있다는 것을 알게 됐습니다. 해결 방안으로 D3 라이브러리를 찾아보니 id를 통해서도 연결을 할 수 있다는 것을 알게 됐습니다.
 
 ```js
 const svg = d3.select("svg");
 const svg = d3.select("#graph");
 ```
 
-graph의 svg에 setAttribute 매소드를 활용하여 돔요소에서 고유한 값인 id를 부여하여 해결하였습니다.
+graph의 svg에 setAttribute 매소드를 활용하여 돔요소에서 고유한 값인 id를 부여하여 해결하였습니다. 이번 문제 해결 과정을 통해 JS의 ES6의 모듈 패턴에 관련하여 깊이 이해할 수 있었습니다. 
 
 최종적으로 베포서버까지 검색기능을 추가하였습니다.
 
-- **공부한 부분** :algolia Doc, Vanilia JS, D3 Library
+- **공부한 부분** :algolia Doc, Vanilia JS,ES6의 Module pattern, D3 Library
 
 </details>
 
