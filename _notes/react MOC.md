@@ -1,6 +1,3 @@
----
----
-
 **[공식 문서](https://ko.reactjs.org/)** 
 
 사용자 UI를 만들기 위한 [[JS_MOC]] 라이브러리
@@ -12,6 +9,7 @@
 5. **불변성** : [[react-immutability]]
 6. 가상돔의 변화를 돔에 반영하는 방식인 [[reconcilation]]
 7. 상태(props and state)의 변화에 따라 UI가 업데이트 : [[hook and props and state]]
+8. 함수적 갱신 : [[functional Update]]
 9. JSX 문법으로 이루어진 ReactJs :  [[JSX]]
 10. AJAX : [[AJAX]]
 11. reconcilation 피하기 : [[react optimization]]
