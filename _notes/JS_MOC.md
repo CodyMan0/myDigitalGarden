@@ -21,6 +21,10 @@
 ## furthurMore
 [[JS_system_call]]
 
+## 버젼
+1. es6 : [[ES6]]
+2. es8 : [[ES8]]
+
 
 ### for 문
 1. [[for of]]
