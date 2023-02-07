@@ -48,10 +48,15 @@ permalink: /
 
   .imgContainer {
     flex: 1;
-
   }
 
   .image-container {
     max-height: 50vh;
+  }
+
+  @media (max-width: 450px) {
+    .imgContainer {
+      display:none;
+    }
   }
 </style>

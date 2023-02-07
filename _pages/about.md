@@ -66,8 +66,8 @@ permalink: /about
 
 .introduction {
   flex: 1 1;
-
   }
+
 #skill {
   padding: 1.5em;
 }
@@ -95,5 +95,17 @@ permalink: /about
   -webkit-transform: scale(1.05) !important;
 	transform: scale(1.05) !important;
 }
+
+
+  @media (max-width: 450px) {
+    #introContainer{
+      display:flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .introduction {
+  }
+  
+  }
 
 </style>
