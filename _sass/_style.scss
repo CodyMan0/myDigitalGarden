@@ -100,7 +100,7 @@ a {
 		background: #fffaf1;
 	}
 	&:after {
-		position: relative; 
+		position: relative;
 		top: -0.5em;
 		font-size: 0.7em;
 		content: "↗";
@@ -122,6 +122,12 @@ a {
 	&.footnote:after,
 	&.reversefootnote:after {
 		content: "";
+	}
+	&.aLink-container {
+		&:hover {
+			-webkit-transform: scale(1.05) !important;
+			transform: scale(1.05) !important;
+		}
 	}
 }
 
