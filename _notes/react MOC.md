@@ -2,6 +2,7 @@
 ---
 
 **[공식 문서](https://ko.reactjs.org/)** 
+[공식 문서 베타 버전](https://beta.reactjs.org/learn/synchronizing-with-effects)
 
 사용자 UI를 만들기 위한 [[JS_MOC]] 라이브러리
 
@@ -18,7 +19,7 @@
 11. reconcilation 피하기 : [[react optimization]]
 12. ReactJs에 있는 hook 살펴보기 : [[hook MOCs]]
 13. 리액트 최적화  : [[Memorization]]
-14. 잊지말아야할 것  => [[react common sense]]
+14. 리액트 공부 중 힘들게 발견한 지식  => [[react nohow]]
 15. 발표자료 : [[react presentation metarial]]
 
 
