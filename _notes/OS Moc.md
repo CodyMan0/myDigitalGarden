@@ -1,14 +1,14 @@
 ---
 ---
 
+[[Hardware Moc]]의 CPU와 GPU에 의해 OS는 실행됩니다.
 
-한양대 공부처  [운영체제 강의](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
+
+1. 운영체제의 역할 : [[roles of OS]]
+2. 운영체제의 핵심 : [[KernelMode]]
+3. 프로세스와 스레드 : [[A comparison between process and thread]]
+4.  프로세스의 주소 공간 : [[process]]
+5. 인터럽트 : [[interrupt]]
+6. System call : [[System call]]
 
 
-1. 운영체제란? [[운영체제 정의]]
-2. 운영체제의 역할 : [[roles of OS]]
-3. 운영체제의 핵심 : [[KernelMode]]
-4. 광운대 강의와 스터디로 운영체제 공부 [[승주의 지식 공유 채널]]
-5. 운영체제 질문식 : [[OS Study]] 
-
-6. 운영체제와 프론트엔드 접점 : [[운영체제 접점]]

@@ -12,23 +12,23 @@ https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jooda99&logN
 
 # 프로세스 정리 
 프로세스란? 
-OS에 의해서 메모리에 적재된 실행중인 [[program]]을 말한다. 
+OS에 의해서 메모리에 적재되고 실행중인 [[program]]을 말한다. 
 
 
 - 프로세스 실행과정 
-[[프로세스의 실행과정]]
+[[the process of execution process]]
 
 - 프로세스 구성 요소
-[[프로세스의 구성 요소]]
+[[The components of a process]]
 
 - 프로세스를 활용하기 위한 OS에서 제공하는 API
-[[프로세스 API]]
+[[process API]]
 
 - 프로세스 상태 
-[[프로세스 상태]]
+[[process status]]
 
 - 프로세스를 저장하기 위한 OS의 자료 구조 
-[[운영체제 자료구조]]
+[[OS 's DataStructure]]
 
 
 
@@ -36,7 +36,7 @@ OS에 의해서 메모리에 적재된 실행중인 [[program]]을 말한다.
 [[주소 공간]]
 
 - 프로세스와 스레드 
-[[프로세스와 스레드 전격 비교]]
+[[A comparison between process and thread]]
 
 ### 생각의 연결고리
 분야 :

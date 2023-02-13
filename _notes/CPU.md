@@ -6,3 +6,8 @@
  [[UserMode]]
  [[KernelMode]]
 
+
+구성 요소 
+1. Core
+2. Cache memory
+3. Contoler
