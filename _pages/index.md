@@ -30,9 +30,7 @@ permalink: /
 </div>
 
 <style>
-  body {
-    min-height: 710px;
-  }
+
 
   #indexContainer {
     display:flex;

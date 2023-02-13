@@ -19,6 +19,7 @@ html {
 		#f2b46b 94.1%
 	);
 	padding: 1rem;
+	min-height: 1vh;
 }
 
 body {
@@ -34,6 +35,12 @@ body {
 
 	@media (min-width: 820px) {
 		font-size: 1.2rem;
+		min-height: 800px;
+	}
+
+	@media (min-width: 1536px) {
+		font-size: 1.2rem;
+		min-height: 900px;
 	}
 }
 
