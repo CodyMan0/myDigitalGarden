@@ -6,6 +6,7 @@
 
 사용자 UI를 만들기 위한 [[JS_MOC]] 라이브러리
 
+
 1. ReactJs의 배경 : [[react-background]]
 2. ReactJs의 특징 : [[React_Feature]]
 3. react에서 해결하고자 하는 문제: [[What things solve with a react]]
@@ -21,6 +22,9 @@
 13. 리액트 최적화  : [[Memorization]]
 14. 리액트 공부 중 힘들게 발견한 지식  => [[react nohow]]
 15. 발표자료 : [[react presentation metarial]]
+16. 버젼 업데이트 [[react verstion]]
+17. 제어 컴포넌트와 비제어  컴포넌트 : [[controlled component]] , [[unControl component]]
+
 
 
 

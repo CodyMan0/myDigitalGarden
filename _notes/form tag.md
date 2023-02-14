@@ -21,3 +21,9 @@
 - target : action에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에 열도록 지정
 - method: 폼을 서버에 전송할 http 매소드 정하기
 
+
+### element
+1. input : input을 통한 사용자의 입력 데이터는 DOM에 저장된다. [[controlled component]]
+2. select
+3. textArea
+
