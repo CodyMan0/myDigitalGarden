@@ -9,14 +9,14 @@ permalink: /portFolio
 <h2>23년<h2>
 <div class="box">
 <div class="items">
-<a class="aLink-container " href="https://github.com/CodyMan0/royalDashBoard" target="blank">
-<img class="image-container" src="/assets/royalGuard.png"/>
+<a class="aLink-container " href="https://github.com/CodyMan0/podo" target="blank">
+<img class="image-container" src="/assets/home.png"/>
 <div class="sub-title">
-<span class="real-title">로얄 가드 프로젝트</span>
+<span class="real-title">포도 소셜 미디어 프로젝트</span>
 </div>
 <div class="sub-title">
-<span class="sub-real-title">1.08 ~ 현재 진행중</span>
-<span class="sub-real-title">Team</span>
+<span class="sub-real-title">02.22~ 현재 진행중</span>
+<span class="sub-real-title">Personal</span>
 </div>
 </a></div>
 <div class="items">
@@ -34,17 +34,6 @@ permalink: /portFolio
 
 <h2>22년<h2>
 <div class="box">
-<div class="items">
-<a class="aLink-container" href="https://github.com/CodyMan0/kakaoGroupPage" target="blank">
-<img class="image-container" src="https://velog.velcdn.com/images/sharphand1/post/feb4b818-6b68-44e3-a546-2a6c4af23e98/image.png">
-<div class="sub-title">
-<span class="real-title">몽땅 보내 프로젝트</span>
-</div>
-<div class="sub-title">
-<span class="sub-real-title">2022.12.21 ~ 2022.12.29</span>
-<span class="sub-real-title">Personal</span>
-</div></a></div>
-
 <div class="items">
 <a class="aLink-container" href="https://github.com/CodyMan0/koda_frontend" target="blank">
 <img class="image-container" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbpNzzi%2FbtrOQCK3v7K%2F5jBs0mjFY45j0r4VRCXXK1%2Fimg.png">

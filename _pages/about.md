@@ -43,13 +43,13 @@ permalink: /about
     <img src="/assets/react.png" alt="react"/>
     </div>
     <div class="skillSetBorder">
-    <img src="/assets/learning.png" alt="learning"/>
+    <img src="/assets/node.png" alt="node"/>
     </div>
     <div class="skillSetBorder">
-      <img src="/assets/learning.png" alt="learning"/>
+      <img src="/assets/recoil.png" alt="recoil"/>
     </div>
     <div class="skillSetBorder">
-      <img src="/assets/learning.png" alt="learning"/>
+      <img src="/assets/aws.png" alt="aws"/>
     </div>
 </div>
 </div>

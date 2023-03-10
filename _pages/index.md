@@ -12,7 +12,7 @@ permalink: /
 <div id="indexContainer">
 <div class="introContainer" >
 <li style="padding: 1.5em 1em;">
-  저의 PDF 이력서는 👉 <a href="/assets/주도적인 프론트엔드 개발자 이주영.pdf" style="font-weight: bold" download>Download RESUME</a>
+  저의 PDF 이력서는 👉 <a href="/assets/주도적인 프론트엔드 개발자 _이주영.pdf" style="font-weight: bold" download>Download RESUME</a>
 </li>
 <li style="padding: 1.5em 1em;"> 
   전 이런 사람이에요 👉 <a class="internal-link" href="/about"><b>About me</b></a>
